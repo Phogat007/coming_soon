@@ -1,11 +1,11 @@
 // Set the target date for the countdown
-const targetDate = new Date('july 01, 2024').getTime();
+const targetDate = new Date('july 01, 2026').getTime();
 
 function updateCountdown() {
     // Get the current date
     const now = new Date().getTime();
     
-    // Find the distance between now and the target date
+    // Find the time between now and the target date
     const distance = targetDate - now;
     
     // Time calculations for days, hours, minutes and seconds
