@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming soon</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="MartPe - India's most trusted product platform, supercharged with AI. Coming soon! Be the first to know when we launch.">
+    <meta name="keywords" content="MartPe, product platform, AI, India, coming soon, launch">
+    <meta name="author" content="Flux8Labs">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MartPe - Coming Soon">
+    <meta property="og:description" content="India's most trusted product platform, supercharged with AI. Coming soon!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martpe.com">
+    <meta property="og:image" content="https://martpe.com/bg.avif">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MartPe - Coming Soon">
+    <meta name="twitter:description" content="India's most trusted product platform, supercharged with AI. Coming soon!">
+    <meta name="twitter:image" content="https://martpe.com/bg.avif">
+    
+    <!-- Backlink Meta Tags -->
+    <meta name="designer" content="Flux8Labs">
+    <meta name="designer-url" content="https://flux8labs.com/">
+    <link rel="canonical" href="https://martpe.com">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="hero">
-            <p>Building Awsome Website</p>
         <h1>COMING SOON</h1>
         <hr>
         <p id="launch"></p>
+        
+        <div class="email-signup">
+            <h3>Be the first to know when we launch!</h3>
+            <form class="signup-form" id="emailForm" action="https://formsubmit.co/deepanshsingh8@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New MartPe Launch Notification Signup">
+                <input type="hidden" name="_next" value="?success=true">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit" class="signup-btn">Notify Me</button>
+            </form>
+            <p class="signup-message" id="signupMessage"></p>
+        </div>
         </div>
     </header>
     <script src="script.js"></script>

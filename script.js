@@ -1,5 +1,5 @@
 // Set the target date for the countdown
-const targetDate = new Date('july 01, 2026').getTime();
+const targetDate = new Date('October 12, 2025').getTime();
 
 function updateCountdown() {
     // Get the current date

@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bg.avif);
     height: 100vh;
     background-position: center;
     background-size: cover;
-
+    position: relative;
 }
+
 .hero{
-    top: 50%;
+    top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -31,7 +32,121 @@ p{
     font-size: 20px;
     margin-bottom: 30px;
 }
+
 #launch{
     font-size: 40px;
     word-spacing: 20px ;
+}
+
+/* Email Signup Styles */
+.email-signup{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.email-signup h3{
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.95;
+}
+
+.signup-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#emailInput, input[name="name"]{
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    min-width: 300px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+#emailInput::placeholder, input[name="name"]::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+#emailInput:focus, input[name="name"]:focus{
+    outline: none;
+    border-color: #ff6b35;
+    background-color: rgba(255,255,255,0.15);
+    box-shadow: 0 0 20px rgba(255,107,53,0.3);
+}
+
+.signup-btn{
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff6b35, #e55a2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+}
+
+.signup-btn:hover{
+    background: linear-gradient(135deg, #e55a2b, #d14a1a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,53,0.4);
+}
+
+.signup-btn:active{
+    transform: translateY(0);
+}
+
+.signup-message{
+    font-size: 16px;
+    margin-top: 15px;
+    min-height: 20px;
+    transition: all 0.3s ease;
+}
+
+.signup-message.success{
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.signup-message.error{
+    color: #f44336;
+    font-weight: bold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup-form{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #emailInput, input[name="name"]{
+        min-width: 280px;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .signup-btn{
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .email-signup h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
